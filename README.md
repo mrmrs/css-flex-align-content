@@ -27,7 +27,7 @@ or download the css on github and include in your project.
 .ac-s {  align-content: stretch; }
 .ac-i {  align-content: inherit; }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .ac-fs-ns { align-content: flex-start; }
   .ac-fe-ns { align-content: flex-end; }
   .ac-c-ns {  align-content: center; }
@@ -37,7 +37,7 @@ or download the css on github and include in your project.
   .ac-i-ns {  align-content: inherit; }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .ac-fs-m { align-content: flex-start; }
   .ac-fe-m { align-content: flex-end; }
   .ac-c-m {  align-content: center; }
@@ -47,7 +47,7 @@ or download the css on github and include in your project.
   .ac-i-m {  align-content: inherit; }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .ac-fs-l { align-content: flex-start; }
   .ac-fe-l { align-content: flex-end; }
   .ac-c-l {  align-content: center; }
