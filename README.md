@@ -9,13 +9,18 @@
 *  -l  = large
 
 ## Install
+Grab the css partial from github and include it in your project or alternatively
+you can install it via npm:
 ```
 npm install --save-dev css-flex-align-content
 ```
-or download the css on github and include in your project.
+View on [npm](https://www.npmjs.org/package/css-flex-align-content)
+
 
 ## File Size
 
+1.3K flex-align-content.css
+1.0K flex-align-content.min.css
 
 ## The Code
 ```
