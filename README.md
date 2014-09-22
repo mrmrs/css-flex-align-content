@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-flex-align-content)
 ## File Size
 
 1.3K flex-align-content.css
-1.0K flex-align-content.min.css
+1.0K flex-align-content.min.css 
+242B minified and gzipped
 
 ## The Code
 ```
