@@ -1,5 +1,6 @@
 {
   "name": "css-flex-align-content",
+  "style": "flex-align-content.css",
   "version": "0.0.5",
   "homepage": "http://github.com/mrmrs/css-flex-align-content",
   "description": "Css module of single purpose classes for flex align content",
