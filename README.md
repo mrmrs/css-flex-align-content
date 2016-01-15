@@ -1,96 +1,114 @@
-# CSS FLEX ALIGN CONTENT
+# css-flex-align-content 0.0.7
 
-  Mobile-first classes for css-flex-align-content.
-  Set the desired css-flex-align-content on any element for any breakpoint.
-  Base class names are namespaced across three breakpoints:
+Css module of single purpose classes for flex align content
 
-*  -ns = not-small (covers everything larger than mobile)
-*  -m  = medium
-*  -l  = large
+#### Stats
 
-## Install
-Grab the css partial from github and include it in your project or alternatively
-you can install it via npm:
+284 | 28 | 28
+---|---|---
+bytes | selectors | declarations
+
+## Installation
+
+#### With [npm](https://npmjs.com)
+
 ```
 npm install --save-dev css-flex-align-content
 ```
-View on [npm](https://www.npmjs.org/package/css-flex-align-content)
 
+#### With Git
 
-## File Size
-
-1.3K flex-align-content.css
-1.0K flex-align-content.min.css
-242B minified and gzipped
-
-## The Code
 ```
+git clone https://github.com/tachyons-css/css-flex-align-content
+```
+
+## Usage
+
+#### Using with [PostCSS](https://github.com/postcss/postcss)
+
+Import the css module
+
+```css
+@import "css-flex-align-content";
+```
+
+Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
+
+```sh
+$ npm i -g tachyons-cli
+$ tachyons-cli path/to/css-file.css > dist/t.css
+```
+
+#### Using the CSS
+
+The built CSS is located in the `css` directory. It contains an unminified and minified version.
+You can either cut and paste that css or link to it directly in your html.
+
+```html
+<link rel="stylesheet" href="path/to/module/css/css-flex-align-content">
+```
+
+#### Development
+
+The source CSS files can be found in the `src` directory.
+Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
+
+## The CSS
+
+```css
+/*
+   FLEX ALIGN CONTENT
+*/
 .ac-fs { align-content: flex-start; }
 .ac-fe { align-content: flex-end; }
-.ac-c {  align-content: center; }
+.ac-c { align-content: center; }
 .ac-sb { align-content: space-between; }
 .ac-sa { align-content: space-around; }
-.ac-s {  align-content: stretch; }
-.ac-i {  align-content: inherit; }
-
+.ac-s { align-content: stretch; }
+.ac-i { align-content: inherit; }
 @media screen and (min-width: 48em) {
-  .ac-fs-ns { align-content: flex-start; }
-  .ac-fe-ns { align-content: flex-end; }
-  .ac-c-ns {  align-content: center; }
-  .ac-sb-ns { align-content: space-between; }
-  .ac-sa-ns { align-content: space-around; }
-  .ac-s-ns {  align-content: stretch; }
-  .ac-i-ns {  align-content: inherit; }
+ .ac-fs-ns { align-content: flex-start; }
+ .ac-fe-ns { align-content: flex-end; }
+ .ac-c-ns { align-content: center; }
+ .ac-sb-ns { align-content: space-between; }
+ .ac-sa-ns { align-content: space-around; }
+ .ac-s-ns { align-content: stretch; }
+ .ac-i-ns { align-content: inherit; }
 }
-
-@media screen and (min-width: 48em) and (max-width: 64em) {
-  .ac-fs-m { align-content: flex-start; }
-  .ac-fe-m { align-content: flex-end; }
-  .ac-c-m {  align-content: center; }
-  .ac-sb-m { align-content: space-between; }
-  .ac-sa-m { align-content: space-around; }
-  .ac-s-m {  align-content: stretch; }
-  .ac-i-m {  align-content: inherit; }
+@media screen and (min-width:48em) and (max-width: 64em) {
+ .ac-fs-m { align-content: flex-start; }
+ .ac-fe-m { align-content: flex-end; }
+ .ac-c-m { align-content: center; }
+ .ac-sb-m { align-content: space-between; }
+ .ac-sa-m { align-content: space-around; }
+ .ac-s-m { align-content: stretch; }
+ .ac-i-m { align-content: inherit; }
 }
-
-@media screen and (min-width: 64em)  {
-  .ac-fs-l { align-content: flex-start; }
-  .ac-fe-l { align-content: flex-end; }
-  .ac-c-l {  align-content: center; }
-  .ac-sb-l { align-content: space-between; }
-  .ac-sa-l { align-content: space-around; }
-  .ac-s-l {  align-content: stretch; }
-  .ac-i-l {  align-content: inherit; }
+@media screen and (min-width: 64em) {
+ .ac-fs-l { align-content: flex-start; }
+ .ac-fe-l { align-content: flex-end; }
+ .ac-c-l { align-content: center; }
+ .ac-sb-l { align-content: space-between; }
+ .ac-sa-l { align-content: space-around; }
+ .ac-s-l { align-content: stretch; }
+ .ac-i-l { align-content: inherit; }
 }
-
 ```
 
-## Author
+## Contributing
 
-[http://mrmrs.cc - Entire internet gateway to all things mrmrs](http://mrmrs.cc)
-[http://mrmrs.io - Open source projects](http://mrmrs.io)
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
+
+## Authors
+
+* [mrmrs](http://mrmrs.io)
+* [johno](http://johnotander.com)
 
 ## License
 
-The MIT License (MIT)
-
-Copyright (c) 2015 @mrmrs
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+MIT
 
