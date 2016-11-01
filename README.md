@@ -1,10 +1,10 @@
-# css-flex-align-content 0.0.7
+# css-flex-align-content 1.0.6
 
 Css module of single purpose classes for flex align content
 
 #### Stats
 
-284 | 28 | 28
+339 | 28 | 56
 ---|---|---
 bytes | selectors | declarations
 
@@ -16,15 +16,25 @@ bytes | selectors | declarations
 npm install --save-dev css-flex-align-content
 ```
 
+Learn more about using css installed with npm:
+* https://webpack.github.io/docs/stylesheets.html
+* https://github.com/defunctzombie/npm-css
+
 #### With Git
 
+http:
 ```
 git clone https://github.com/tachyons-css/css-flex-align-content
 ```
 
+ssh:
+```
+git clone git@github.com:tachyons-css/css-flex-align-content.git
+```
+
 ## Usage
 
-#### Using with [PostCSS](https://github.com/postcss/postcss)
+#### Using with [Postcss](https://github.com/postcss/postcss)
 
 Import the css module
 
@@ -32,16 +42,24 @@ Import the css module
 @import "css-flex-align-content";
 ```
 
-Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
+Then process the css using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
 
 ```sh
 $ npm i -g tachyons-cli
-$ tachyons-cli path/to/css-file.css > dist/t.css
+$ tachyons path/to/css-file.css > dist/t.css
 ```
 
-#### Using the CSS
+#### Using the css
 
-The built CSS is located in the `css` directory. It contains an unminified and minified version.
+##### CDN
+The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
+
+```
+<link rel="stylesheet" href="http://unpkg.com/css-flex-align-content@1.0.6/css/css-flex-align-content.min.css" />
+```
+
+##### Locally
+The built css is located in the `css` directory. It contains an unminified and minified version.
 You can either cut and paste that css or link to it directly in your html.
 
 ```html
@@ -50,48 +68,48 @@ You can either cut and paste that css or link to it directly in your html.
 
 #### Development
 
-The source CSS files can be found in the `src` directory.
-Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
+The source css files can be found in the `src` directory.
+Running `$ npm start` will process the source css and place the built css in the `css` directory.
 
-## The CSS
+## The css
 
 ```css
 /*
    FLEX ALIGN CONTENT
 */
-.ac-fs { align-content: flex-start; }
-.ac-fe { align-content: flex-end; }
-.ac-c { align-content: center; }
-.ac-sb { align-content: space-between; }
-.ac-sa { align-content: space-around; }
-.ac-s { align-content: stretch; }
-.ac-i { align-content: inherit; }
+.ac-fs { -ms-flex-line-pack: start; align-content: flex-start; }
+.ac-fe { -ms-flex-line-pack: end; align-content: flex-end; }
+.ac-c { -ms-flex-line-pack: center; align-content: center; }
+.ac-sb { -ms-flex-line-pack: justify; align-content: space-between; }
+.ac-sa { -ms-flex-line-pack: distribute; align-content: space-around; }
+.ac-s { -ms-flex-line-pack: stretch; align-content: stretch; }
+.ac-i { -ms-flex-line-pack: inherit; align-content: inherit; }
 @media screen and (min-width: 48em) {
- .ac-fs-ns { align-content: flex-start; }
- .ac-fe-ns { align-content: flex-end; }
- .ac-c-ns { align-content: center; }
- .ac-sb-ns { align-content: space-between; }
- .ac-sa-ns { align-content: space-around; }
- .ac-s-ns { align-content: stretch; }
- .ac-i-ns { align-content: inherit; }
+ .ac-fs-ns { -ms-flex-line-pack: start; align-content: flex-start; }
+ .ac-fe-ns { -ms-flex-line-pack: end; align-content: flex-end; }
+ .ac-c-ns { -ms-flex-line-pack: center; align-content: center; }
+ .ac-sb-ns { -ms-flex-line-pack: justify; align-content: space-between; }
+ .ac-sa-ns { -ms-flex-line-pack: distribute; align-content: space-around; }
+ .ac-s-ns { -ms-flex-line-pack: stretch; align-content: stretch; }
+ .ac-i-ns { -ms-flex-line-pack: inherit; align-content: inherit; }
 }
 @media screen and (min-width:48em) and (max-width: 64em) {
- .ac-fs-m { align-content: flex-start; }
- .ac-fe-m { align-content: flex-end; }
- .ac-c-m { align-content: center; }
- .ac-sb-m { align-content: space-between; }
- .ac-sa-m { align-content: space-around; }
- .ac-s-m { align-content: stretch; }
- .ac-i-m { align-content: inherit; }
+ .ac-fs-m { -ms-flex-line-pack: start; align-content: flex-start; }
+ .ac-fe-m { -ms-flex-line-pack: end; align-content: flex-end; }
+ .ac-c-m { -ms-flex-line-pack: center; align-content: center; }
+ .ac-sb-m { -ms-flex-line-pack: justify; align-content: space-between; }
+ .ac-sa-m { -ms-flex-line-pack: distribute; align-content: space-around; }
+ .ac-s-m { -ms-flex-line-pack: stretch; align-content: stretch; }
+ .ac-i-m { -ms-flex-line-pack: inherit; align-content: inherit; }
 }
 @media screen and (min-width: 64em) {
- .ac-fs-l { align-content: flex-start; }
- .ac-fe-l { align-content: flex-end; }
- .ac-c-l { align-content: center; }
- .ac-sb-l { align-content: space-between; }
- .ac-sa-l { align-content: space-around; }
- .ac-s-l { align-content: stretch; }
- .ac-i-l { align-content: inherit; }
+ .ac-fs-l { -ms-flex-line-pack: start; align-content: flex-start; }
+ .ac-fe-l { -ms-flex-line-pack: end; align-content: flex-end; }
+ .ac-c-l { -ms-flex-line-pack: center; align-content: center; }
+ .ac-sb-l { -ms-flex-line-pack: justify; align-content: space-between; }
+ .ac-sa-l { -ms-flex-line-pack: distribute; align-content: space-around; }
+ .ac-s-l { -ms-flex-line-pack: stretch; align-content: stretch; }
+ .ac-i-l { -ms-flex-line-pack: inherit; align-content: inherit; }
 }
 ```
 
@@ -111,3 +129,4 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
 ## License
 
 ISC
+
