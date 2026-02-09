@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { transform } = require('lightningcss');
 
-const srcFile = path.join(__dirname, 'src', 'css-flex-align-content.css');
+const srcFile = path.join(__dirname, 'src', 'flex-align-content.css');
 const distDir = path.join(__dirname, 'dist');
 
 // Read source
@@ -15,22 +15,22 @@ if (!fs.existsSync(distDir)) {
 
 // Unminified — just normalize formatting
 const { code: unminified } = transform({
-  filename: 'css-flex-align-content.css',
+  filename: 'flex-align-content.css',
   code: Buffer.from(source),
   minify: false,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-flex-align-content.css'), unminified);
+fs.writeFileSync(path.join(distDir, 'flex-align-content.css'), unminified);
 
 // Minified
 const { code: minified } = transform({
-  filename: 'css-flex-align-content.css',
+  filename: 'flex-align-content.css',
   code: Buffer.from(source),
   minify: true,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-flex-align-content.min.css'), minified);
+fs.writeFileSync(path.join(distDir, 'flex-align-content.min.css'), minified);
 
 console.log('Build complete:');
-console.log(`  dist/css-flex-align-content.css     ${unminified.length} bytes`);
-console.log(`  dist/css-flex-align-content.min.css ${minified.length} bytes`);
+console.log(`  dist/flex-align-content.css     ${unminified.length} bytes`);
+console.log(`  dist/flex-align-content.min.css ${minified.length} bytes`);
