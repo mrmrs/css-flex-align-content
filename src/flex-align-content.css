@@ -10,7 +10,7 @@
 .ac-s {  align-content: stretch; }
 .ac-i {  align-content: inherit; }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .ac-fs-s { align-content: flex-start; }
   .ac-fe-s { align-content: flex-end; }
   .ac-c-s {  align-content: center; }
@@ -20,7 +20,7 @@
   .ac-i-s {  align-content: inherit; }
 }
 
-@media screen and (min-width:48em) and (max-width: 64em) {
+@media screen and (min-width:48em) {
   .ac-fs-m { align-content: flex-start; }
   .ac-fe-m { align-content: flex-end; }
   .ac-c-m {  align-content: center; }
@@ -30,7 +30,7 @@
   .ac-i-m {  align-content: inherit; }
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 96em) {
   .ac-fs-l { align-content: flex-start; }
   .ac-fe-l { align-content: flex-end; }
   .ac-c-l {  align-content: center; }
