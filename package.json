@@ -1,38 +1,44 @@
 {
   "name": "css-flex-align-content",
-  "style": "flex-align-content.css",
-  "version": "1.0.8",
-  "homepage": "http://github.com/mrmrs/css-flex-align-content",
-  "description": "Css module of single purpose classes for flex align content",
+  "version": "2.0.0",
+  "description": "Functional CSS for flex-align-content",
+  "style": "dist/flex-align-content.css",
+  "main": "dist/flex-align-content.css",
+  "exports": {
+    ".": "./dist/flex-align-content.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "flex-align-content"
+    "flex-align-content",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-flex-align-content": {
+  "homepage": "https://github.com/mrmrs/css-flex-align-content",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-flex-align-content.git"
+    "url": "https://github.com/mrmrs/css-flex-align-content.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-flex-align-content/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-flex-align-content/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
