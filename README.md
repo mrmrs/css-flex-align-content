@@ -1,132 +1,96 @@
-# css-flex-align-content 1.0.6
+# css-flex-align-content
 
-Css module of single purpose classes for flex align content
+Functional CSS for flex-align-content
 
-#### Stats
+## Filesize
 
-339 | 28 | 56
----|---|---
-bytes | selectors | declarations
+| File | Size |
+|------|------|
+| `dist/flex-align-content.css` | 1817 bytes |
+| `dist/flex-align-content.min.css` | 1425 bytes (242 Gzipped) |
 
-## Installation
+## Install
 
-#### With [npm](https://npmjs.com)
-
-```
-npm install --save-dev css-flex-align-content
-```
-
-Learn more about using css installed with npm:
-* https://webpack.github.io/docs/stylesheets.html
-* https://github.com/defunctzombie/npm-css
-
-#### With Git
-
-http:
-```
-git clone https://github.com/tachyons-css/css-flex-align-content
-```
-
-ssh:
-```
-git clone git@github.com:tachyons-css/css-flex-align-content.git
+```sh
+npm install css-flex-align-content
 ```
 
 ## Usage
 
-#### Using with [Postcss](https://github.com/postcss/postcss)
-
-Import the css module
+### Import
 
 ```css
 @import "css-flex-align-content";
 ```
 
-Then process the css using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
-
-```sh
-$ npm i -g tachyons-cli
-$ tachyons path/to/css-file.css > dist/t.css
-```
-
-#### Using the css
-
-##### CDN
-The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
-
-```
-<link rel="stylesheet" href="http://unpkg.com/css-flex-align-content@1.0.6/css/css-flex-align-content.min.css" />
-```
-
-##### Locally
-The built css is located in the `css` directory. It contains an unminified and minified version.
-You can either cut and paste that css or link to it directly in your html.
+### CDN
 
 ```html
-<link rel="stylesheet" href="path/to/module/css/css-flex-align-content">
+<link rel="stylesheet" href="https://unpkg.com/css-flex-align-content/dist/flex-align-content.min.css">
 ```
 
-#### Development
+### Direct
 
-The source css files can be found in the `src` directory.
-Running `$ npm start` will process the source css and place the built css in the `css` directory.
-
-## The css
-
-```css
-/*
-   FLEX ALIGN CONTENT
-*/
-.ac-fs { -ms-flex-line-pack: start; align-content: flex-start; }
-.ac-fe { -ms-flex-line-pack: end; align-content: flex-end; }
-.ac-c { -ms-flex-line-pack: center; align-content: center; }
-.ac-sb { -ms-flex-line-pack: justify; align-content: space-between; }
-.ac-sa { -ms-flex-line-pack: distribute; align-content: space-around; }
-.ac-s { -ms-flex-line-pack: stretch; align-content: stretch; }
-.ac-i { -ms-flex-line-pack: inherit; align-content: inherit; }
-@media screen and (min-width: 48em) {
- .ac-fs-ns { -ms-flex-line-pack: start; align-content: flex-start; }
- .ac-fe-ns { -ms-flex-line-pack: end; align-content: flex-end; }
- .ac-c-ns { -ms-flex-line-pack: center; align-content: center; }
- .ac-sb-ns { -ms-flex-line-pack: justify; align-content: space-between; }
- .ac-sa-ns { -ms-flex-line-pack: distribute; align-content: space-around; }
- .ac-s-ns { -ms-flex-line-pack: stretch; align-content: stretch; }
- .ac-i-ns { -ms-flex-line-pack: inherit; align-content: inherit; }
-}
-@media screen and (min-width:48em) and (max-width: 64em) {
- .ac-fs-m { -ms-flex-line-pack: start; align-content: flex-start; }
- .ac-fe-m { -ms-flex-line-pack: end; align-content: flex-end; }
- .ac-c-m { -ms-flex-line-pack: center; align-content: center; }
- .ac-sb-m { -ms-flex-line-pack: justify; align-content: space-between; }
- .ac-sa-m { -ms-flex-line-pack: distribute; align-content: space-around; }
- .ac-s-m { -ms-flex-line-pack: stretch; align-content: stretch; }
- .ac-i-m { -ms-flex-line-pack: inherit; align-content: inherit; }
-}
-@media screen and (min-width: 64em) {
- .ac-fs-l { -ms-flex-line-pack: start; align-content: flex-start; }
- .ac-fe-l { -ms-flex-line-pack: end; align-content: flex-end; }
- .ac-c-l { -ms-flex-line-pack: center; align-content: center; }
- .ac-sb-l { -ms-flex-line-pack: justify; align-content: space-between; }
- .ac-sa-l { -ms-flex-line-pack: distribute; align-content: space-around; }
- .ac-s-l { -ms-flex-line-pack: stretch; align-content: stretch; }
- .ac-i-l { -ms-flex-line-pack: inherit; align-content: inherit; }
-}
+```html
+<link rel="stylesheet" href="path/to/css-flex-align-content/dist/flex-align-content.min.css">
 ```
 
-## Contributing
+## Classes
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+| Class   | Value                    |
+|---------|--------------------------|
+| `.align-content-start` | `align-content: flex-start;` |
+| `.align-content-end` | `align-content: flex-end;` |
+| `.align-content-center` | `align-content: center;` |
+| `.align-content-between` | `align-content: space-between;` |
+| `.align-content-around` | `align-content: space-around;` |
+| `.align-content-stretch` | `align-content: stretch;` |
+| `.align-content-inherit` | `align-content: inherit;` |
+| `.align-content-start-s` | `align-content: flex-start;` |
+| `.align-content-end-s` | `align-content: flex-end;` |
+| `.align-content-center-s` | `align-content: center;` |
+| `.align-content-between-s` | `align-content: space-between;` |
+| `.align-content-around-s` | `align-content: space-around;` |
+| `.align-content-stretch-s` | `align-content: stretch;` |
+| `.align-content-inherit-s` | `align-content: inherit;` |
+| `.align-content-start-m` | `align-content: flex-start;` |
+| `.align-content-end-m` | `align-content: flex-end;` |
+| `.align-content-center-m` | `align-content: center;` |
+| `.align-content-between-m` | `align-content: space-between;` |
+| `.align-content-around-m` | `align-content: space-around;` |
+| `.align-content-stretch-m` | `align-content: stretch;` |
+| `.align-content-inherit-m` | `align-content: inherit;` |
+| `.align-content-start-l` | `align-content: flex-start;` |
+| `.align-content-end-l` | `align-content: flex-end;` |
+| `.align-content-center-l` | `align-content: center;` |
+| `.align-content-between-l` | `align-content: space-between;` |
+| `.align-content-around-l` | `align-content: space-around;` |
+| `.align-content-stretch-l` | `align-content: stretch;` |
+| `.align-content-inherit-l` | `align-content: inherit;` |
 
-## Authors
+### Responsive
 
-* [mrmrs](http://mrmrs.io)
-* [johno](http://johnotander.com)
+Responsive variants are available for each class with the following suffixes:
+
+| Suffix | Media Query              |
+|--------|--------------------------|
+| `-s`   | `min-width: 32em`        |
+| `-m`   | `min-width: 48em`        |
+| `-l`   | `min-width: 96em`        |
+
+Example: `.align-content-start-m` applies the property at the medium breakpoint and above.
+
+## Building
+
+```sh
+npm run build
+```
+
+Processes `src/flex-align-content.css` with [Lightning CSS](https://lightningcss.dev) and outputs to `dist/`.
+
+- `dist/flex-align-content.css` — formatted
+- `dist/flex-align-content.min.css` — minified
 
 ## License
 
-ISC
-
+MIT
