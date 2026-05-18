@@ -1,117 +1,117 @@
-.align-content-start {
+.ac-fs {
   align-content: flex-start;
 }
 
-.align-content-end {
+.ac-fe {
   align-content: flex-end;
 }
 
-.align-content-center {
+.ac-c {
   align-content: center;
 }
 
-.align-content-between {
+.ac-sb {
   align-content: space-between;
 }
 
-.align-content-around {
+.ac-sa {
   align-content: space-around;
 }
 
-.align-content-stretch {
+.ac-s {
   align-content: stretch;
 }
 
-.align-content-inherit {
+.ac-i {
   align-content: inherit;
 }
 
 @media screen and (width >= 32em) {
-  .align-content-start-s {
+  .ac-fs-s {
     align-content: flex-start;
   }
 
-  .align-content-end-s {
+  .ac-fe-s {
     align-content: flex-end;
   }
 
-  .align-content-center-s {
+  .ac-c-s {
     align-content: center;
   }
 
-  .align-content-between-s {
+  .ac-sb-s {
     align-content: space-between;
   }
 
-  .align-content-around-s {
+  .ac-sa-s {
     align-content: space-around;
   }
 
-  .align-content-stretch-s {
+  .ac-s-s {
     align-content: stretch;
   }
 
-  .align-content-inherit-s {
+  .ac-i-s {
     align-content: inherit;
   }
 }
 
 @media screen and (width >= 48em) {
-  .align-content-start-m {
+  .ac-fs-m {
     align-content: flex-start;
   }
 
-  .align-content-end-m {
+  .ac-fe-m {
     align-content: flex-end;
   }
 
-  .align-content-center-m {
+  .ac-c-m {
     align-content: center;
   }
 
-  .align-content-between-m {
+  .ac-sb-m {
     align-content: space-between;
   }
 
-  .align-content-around-m {
+  .ac-sa-m {
     align-content: space-around;
   }
 
-  .align-content-stretch-m {
+  .ac-s-m {
     align-content: stretch;
   }
 
-  .align-content-inherit-m {
+  .ac-i-m {
     align-content: inherit;
   }
 }
 
 @media screen and (width >= 96em) {
-  .align-content-start-l {
+  .ac-fs-l {
     align-content: flex-start;
   }
 
-  .align-content-end-l {
+  .ac-fe-l {
     align-content: flex-end;
   }
 
-  .align-content-center-l {
+  .ac-c-l {
     align-content: center;
   }
 
-  .align-content-between-l {
+  .ac-sb-l {
     align-content: space-between;
   }
 
-  .align-content-around-l {
+  .ac-sa-l {
     align-content: space-around;
   }
 
-  .align-content-stretch-l {
+  .ac-s-l {
     align-content: stretch;
   }
 
-  .align-content-inherit-l {
+  .ac-i-l {
     align-content: inherit;
   }
 }

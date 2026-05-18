@@ -6,8 +6,8 @@ Functional CSS for flex-align-content
 
 | File | Size |
 |------|------|
-| `dist/flex-align-content.css` | 1817 bytes |
-| `dist/flex-align-content.min.css` | 1425 bytes (242 Gzipped) |
+| `dist/flex-align-content.css` | 1389 bytes |
+| `dist/flex-align-content.min.css` | 997 bytes (231 Gzipped) |
 
 ## Install
 
@@ -39,34 +39,34 @@ npm install css-flex-align-content
 
 | Class   | Value                    |
 |---------|--------------------------|
-| `.align-content-start` | `align-content: flex-start;` |
-| `.align-content-end` | `align-content: flex-end;` |
-| `.align-content-center` | `align-content: center;` |
-| `.align-content-between` | `align-content: space-between;` |
-| `.align-content-around` | `align-content: space-around;` |
-| `.align-content-stretch` | `align-content: stretch;` |
-| `.align-content-inherit` | `align-content: inherit;` |
-| `.align-content-start-s` | `align-content: flex-start;` |
-| `.align-content-end-s` | `align-content: flex-end;` |
-| `.align-content-center-s` | `align-content: center;` |
-| `.align-content-between-s` | `align-content: space-between;` |
-| `.align-content-around-s` | `align-content: space-around;` |
-| `.align-content-stretch-s` | `align-content: stretch;` |
-| `.align-content-inherit-s` | `align-content: inherit;` |
-| `.align-content-start-m` | `align-content: flex-start;` |
-| `.align-content-end-m` | `align-content: flex-end;` |
-| `.align-content-center-m` | `align-content: center;` |
-| `.align-content-between-m` | `align-content: space-between;` |
-| `.align-content-around-m` | `align-content: space-around;` |
-| `.align-content-stretch-m` | `align-content: stretch;` |
-| `.align-content-inherit-m` | `align-content: inherit;` |
-| `.align-content-start-l` | `align-content: flex-start;` |
-| `.align-content-end-l` | `align-content: flex-end;` |
-| `.align-content-center-l` | `align-content: center;` |
-| `.align-content-between-l` | `align-content: space-between;` |
-| `.align-content-around-l` | `align-content: space-around;` |
-| `.align-content-stretch-l` | `align-content: stretch;` |
-| `.align-content-inherit-l` | `align-content: inherit;` |
+| `.ac-fs` | `align-content: flex-start;` |
+| `.ac-fe` | `align-content: flex-end;` |
+| `.ac-c` | `align-content: center;` |
+| `.ac-sb` | `align-content: space-between;` |
+| `.ac-sa` | `align-content: space-around;` |
+| `.ac-s` | `align-content: stretch;` |
+| `.ac-i` | `align-content: inherit;` |
+| `.ac-fs-s` | `align-content: flex-start;` |
+| `.ac-fe-s` | `align-content: flex-end;` |
+| `.ac-c-s` | `align-content: center;` |
+| `.ac-sb-s` | `align-content: space-between;` |
+| `.ac-sa-s` | `align-content: space-around;` |
+| `.ac-s-s` | `align-content: stretch;` |
+| `.ac-i-s` | `align-content: inherit;` |
+| `.ac-fs-m` | `align-content: flex-start;` |
+| `.ac-fe-m` | `align-content: flex-end;` |
+| `.ac-c-m` | `align-content: center;` |
+| `.ac-sb-m` | `align-content: space-between;` |
+| `.ac-sa-m` | `align-content: space-around;` |
+| `.ac-s-m` | `align-content: stretch;` |
+| `.ac-i-m` | `align-content: inherit;` |
+| `.ac-fs-l` | `align-content: flex-start;` |
+| `.ac-fe-l` | `align-content: flex-end;` |
+| `.ac-c-l` | `align-content: center;` |
+| `.ac-sb-l` | `align-content: space-between;` |
+| `.ac-sa-l` | `align-content: space-around;` |
+| `.ac-s-l` | `align-content: stretch;` |
+| `.ac-i-l` | `align-content: inherit;` |
 
 ### Responsive
 
@@ -78,7 +78,7 @@ Responsive variants are available for each class with the following suffixes:
 | `-m`   | `min-width: 48em`        |
 | `-l`   | `min-width: 96em`        |
 
-Example: `.align-content-start-m` applies the property at the medium breakpoint and above.
+Example: `.ac-fs-m` applies the property at the medium breakpoint and above.
 
 ## Building
 
